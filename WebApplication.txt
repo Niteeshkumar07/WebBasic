@@ -1,0 +1,65 @@
+
+Web applications SPA MPA
+
+HTML-> Hyper->link markup->structure
+
+web develoed by -> Tim Turner Tee
+
+tag - predefined keyword enclosed in angular braces types of tag paired and unpaired 
+
+element -> combination of opening and closing tag and content is called element .
+
+void element -> which have don't have any content.
+
+h1-> 32px
+h2->24px
+
+Types of element on behaviour -> Block level element -> it will cover entire Depth of the ui > h1 -> height and width is apllicable > div,heading > start from the next line
+Inline Element -> cover only actual space it take it will take depth of content> span-> height and width not use > span,a,input > start from the same line
+
+
+Formating tag -> to format the content of text 
+<physical tag>  <logical tag>
+<b>    		<strong> -> have more priority
+<i>		<em>
+<u>		<ins>
+<p>		<pre>-> belongs to monoclinic font family also consider void 			spaces
+<mark> to highlight the task
+<code>
+<sub>(subscript) -> to specify in base of any text
+<sup>(superscript) -> in power of ant text
+<abbr> -> is used to show the tool tip on renedering
+<address> -> to specify the address only
+
+
+
+			Attribute -> Extra information about the element
+Core Attribute						Element Specific Attribure
+id -> if you want to target specific element (#)		href-> 
+class -> target group of element(.)				src->
+title -> tool tip for web page					<alt>->
+style -> want to provide inline styling 
+
+
+anchor tag -> used to redirect to pages
+href -> hyper reference text specifies as hyper text
+target > _balnk
+
+
+
+li -> list item
+types 1. ordered default -> number
+2. unordered 
+3. description list -> description term -> description data
+
+type-> alpha , numeric , roman    //        ul -> type->square,circle,disc,none
+
+
+
+table border="2" depricated-> th -> enclose in thead
+tr -> td -> enlclosed in tbody
+
+table element -> table head, body , caption -> to give name to table 
+
+rowspan -> When many column data is same so we rowspan them in single column
+colspan -> when we want to give space to some one coloumn of other
