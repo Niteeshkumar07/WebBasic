@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+
+  <style>
+    .outer {
+      height: 100vh;
+      background-color: rgb(143, 59, 59);
+      padding-top: 40px;
+      box-sizing: border-box;
+    }
+
+    form {
+      width: 650px; 
+      margin: auto;
+      background-color: #7b2f3a;
+      padding: 35px;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 10px;  
+    }
+
+    td:first-child {
+      width: 200px;              
+      font-size: 18px;
+      color: #000;              
+    }
+
+    td {
+      vertical-align: middle;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 80px;
+      resize: none;
+    }
+    .radio input {
+      width: auto;
+      margin-left: 10px;
+      margin-right: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      background: #e6e6e6;
+      cursor: pointer;
+      margin-top: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <form action="" method="get">
+      <fieldset>
+        <table>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td><input type="text" placeholder="your name" required name="name" id="name"/></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" placeholder="your email" required name="email" id="email" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="password">Password:</label></td>
+            <td><input type="password" required minlength="6" maxlength="8" name="password" id="password"/></td>
+          </tr>
+
+          <tr>
+            <td><label for="number">Phone Number:</label></td>
+            <td><input type="number" required pattern="[0-9]{10}" placeholder="10-digit number" name="number" id="number"/></td>
+          </tr>
+
+          <tr>
+            <td><label for="gender">Gender:</label></td>
+            <td class="radio">
+              Male <input type="radio" name="gender" value="male" required id="gender"/>
+              Female <input type="radio" name="gender" value="female" id="gender"/>
+              Other <input type="radio" name="gender" value="other" id="gender"/>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Language:</td>
+            <td>
+              <select required name="language">
+                <option value="" selected disabled>Select Language</option>
+                <option value="hindi">Hindi</option>
+                <option value="english">English</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="code">Zip Code:</label></td>
+            <td><input type="text" required name="code" pattern="[0-9]{5}" placeholder="5-digit code" id="code" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="about">About</label></td>
+            <td><textarea name="address" placeholder="Write About Yourself" required id="about"></textarea></td>
+          </tr>
+        </table>
+
+        <button type="submit">Register</button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+</html>
