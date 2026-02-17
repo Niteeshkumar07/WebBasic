@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" style="height: 100%; width: 300px; margin: auto; background-color: antiquewhite;" method="get">
+        <fieldset>
+            <legend>Student Application</legend>
+            <label for="name">Name: </label><input type="text" placeholder="Enter Your Name" id="name" required
+                name="name">
+            <br>
+            <br>
+            <label for="email">Email: </label><input type="email" placeholder="Enter Your Email" id="email" required
+                name="email">
+            <br>
+            <br>
+            <label for="password">Password: </label>
+            <input placeholder="Password Should be greater than 6 and less than 12" id="password" type="password"
+                required minlength="6" maxlength="12" name="password">
+            <br>
+            <br>
+            <label>Contact No.</label>
+            <input type="number" placeholder="Enter Your Number" required id="number" name="number">
+            <br>
+            <br>
+            <label>Enter Your Gender</label>
+            <br>
+            <input type="radio" required name="gender">male
+            <input type="radio" required name="gender">female
+            <input type="radio" name="gender">other
+            <br>
+            <br>
+            <label>Skills</label>
+            <input type="checkbox" name="skills">HTML
+            <input type="checkbox" name="skills">CSS
+            <br>
+            <br>
+            <label>Country</label>
+            <select name="country">
+                <option selected disabled>Select</option>
+                <option value="India">India</option>
+                <option value="Aus">Australia</option>
+                <option value="China">China</option>
+                <option value="USA">USA</option>
+            </select>
+            <br>
+            <br>
+            <label>Address</label>
+            <textarea style="resize: none;" name="address"></textarea>
+            <br>
+            <br>
+            <input type="date" name="dob">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+            <!-- <input type="submit"> -->
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

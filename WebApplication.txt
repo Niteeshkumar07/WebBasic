@@ -63,3 +63,76 @@ table element -> table head, body , caption -> to give name to table
 
 rowspan -> When many column data is same so we rowspan them in single column
 colspan -> when we want to give space to some one coloumn of other
+
+cellspacing -> cell spacing is done to give each cell particular space/ space between cells
+
+cellpadding -> in each cell give the padding / give space in between content and cell border
+
+Semantic Tag -> Uniqliy Identify the each portion /have more meaning/ boost SEO/ have more readibility
+
+ex-> h->header, d->deatils, a->aside, m->main,mark, n->nav, s->summary/section , t->table/time, a->article, f->figure, f->footer/format
+
+
+Form -> To take the user input/electronic format
+components -> legend -> for heading
+fieldset -> to wrap all the components or fields
+
+input, label
+
+
+form element -> fieldset->to group all the field element, input, label, select--option,legend, textarea
+type value -> text, radio, checkbox, email, password, date
+
+As when we want to click email -> go in input field so we do like in label for in which we define id given to inputfield
+
+if we want to do know that submit button know which form is submit so give type submit
+
+validate -> disbaled,selected,required,placeholder,minlength,maxlength
+-> dropbox -> option -> selected disbaled
+-> required for mandatory
+
+
+In Gender to make only one select so we make all things of all types by help of name="gender" so they are type of gender
+
+form attribute action->where the form data go after/have path , method->get(default)(data is visible in url)(less secure)/post(data is not visible in url)(less secure)
+
+name = "name" is written as to give the data to backend, value->it hold some value
+
+
+
+Media Tag-> embedded a QR
+embedded a one page inside another
+youtube videos
+audio
+video
+
+QR Code -> In img give the qr api and at last in exchnage of example write your url
+
+iframe-> to embedd one page inside another page
+
+audio -> controls , loop, muted, autoplay
+
+video-> to make thubnail like use poster
+
+
+
+
+
+
+											CSS (cascading style sheets)(pouring) -> invented by hakon Wieum lee in 1994
+											CSS1 -> 1996
+											CSS2 -> 1998
+											CCS3 -> 1999
+
+Types of Css -> 1. Inline CSS(using style attribute)
+2. Internal -> style tag inside your head
+3. External -> differnent file in other position(head -> link tag)
+
+2&3 is depends on priority how much is close to html tag more close more less priority 
+
+CSS line by line execution
+
+CSS Selector-> class(.),id(#),tagname,grouping(,),universal selector(*)
+
+
+
