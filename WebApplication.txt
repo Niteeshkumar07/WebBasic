@@ -136,3 +136,86 @@ CSS Selector-> class(.),id(#),tagname,grouping(,),universal selector(*)
 
 
 
+CSS Units -> Absolute(it will not change)(px,inches,cm,mm)                  Relative->size is depend on the parent container
+1px -> 1/92 inches															ex->em(parent related(div -> 5px , so child have 5*5px)),rem(html(16px) related),vh,vw use them for responsive
+
+Text Properties -> to change appearance of text
+text-colorc(Rgb(red,green,blue(0-255)),rgba(alpha(intensity)),hsl(hue saturation lightining),hexadecimal(#(0-9,A-F)(3,4,6,8 range is allowed)),hsla(alpha(1-360)))
+text decoration(underline,overline,solid,line-through,)
+text alignment(align)
+text transform(uppercase,lowercase,none,captilize)
+line height(provide space b/w lines)
+word spacing(provide space b/w words)
+letter spacing(provide space b/w letter)
+text-intent(para spacing)
+
+Font Properties-> 
+Font Size
+Font weight(bold,bolder,100-900)
+font family(normal(inbuild),external(cdn(content delivery network)/download/import))
+
+
+
+Box-> flow 
+margin(to move the container)
+		border(space between margin and padding)
+				padding(space between border and content)
+						content
+
+
+
+box - sizing -> border-box(content not come outside)
+
+margin -> top right bottom left
+
+margin -> top right/ledt bottom
+margin -> top/bottom left/right
+
+
+padding -> to move the content innside a container
+
+padding -> 
+
+border-> border-radius
+border-top-right radius
+border-width
+border-top-> 2px solid red
+
+
+
+Display Property
+Block -> make the element to behave like a block level element
+Inline -> make inline element
+Inline-Block -> inline-block element
+Flex(one directional achivement)-> display:Flex
+		justify content
+		align item
+		row reverse/col reverse
+None
+
+flex-> display,flex wrap->wrap,justify-content->space-between,space around,space evenly
+
+
+
+
+
+
+
+
+JavaScript -> high level object oriented programming language/dynimcally typed/.js extension/interpeted language
+JavaScript is used for client side rendering/ synchronous in nature
+JavaScript is single threaded
+
+NextScape computer coorpartion
+NextScape navigator(browser) lanaguage ->(brandon euch 1995) mocha->livescript->javascript->js(give to elcma(european computer manufacturing association))
+
+
+Js give to js engine -> Parser(dividing the code into small chunks) -> Abstract Synthetical Tree(Ast)(store in the form ast)(give this code to interpeter)->interpeter->generate the byte code->machine code
+																											|
+																											JIT(Just in Time)(have profiler check for hot put which is repeating again again) used for performace optimization
+
+
+
+
+
+
