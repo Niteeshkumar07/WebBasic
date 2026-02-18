@@ -1,36 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
     <style>
-        #main{
+        body {
+            margin: 0;
+        }
+
+        #main {
             height: 100vh;
             width: 100vw;
             border: 2px solid black;
         }
-        nav{
+
+        nav {
             height: 10vh;
             background-color: red;
         }
-        #middle{
+
+        footer {
+            height: 10vh;
+            background-color: pink;
+        }
+
+        #middle {
+            height: 80vh;
             display: flex;
-            border: 2px solid black;
-            height: 20vh;
-            width: 100%;
+        }
+
+        #left {
+            width: 40%;
+            border-right: 2px solid black;
+            background-color: aqua;
+        }
+
+        #right {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #righttop {
+            height: 50%;
+            border-bottom: 2px solid black;
+            background-color: aquamarine;
+        }
+
+        #rightbottom {
+            height: 50%;
+            display: flex;
+        }
+
+        #rb1 {
+            width: 50%;
+            border-right: 2px solid black;
+            background-color: aliceblue;
+
+        }
+
+        #rb2 {
+            width: 50%;
+            background-color: blueviolet;
         }
     </style>
 </head>
+
 <body>
     <main id="main">
         <nav>Nav</nav>
         <div id="middle">
-            <aside></aside>
-            <aside></aside>
+            <aside id="left">Left Box</aside>
+            <section id="right">
+                <div id="righttop">Right Top</div>
+                <div id="rightbottom">
+                    <div id="rb1">Bottom Left</div>
+                    <div id="rb2">Bottom Right</div>
+                </div>
+            </section>
         </div>
         <footer>Footer</footer>
     </main>
 </body>
+
 </html>
