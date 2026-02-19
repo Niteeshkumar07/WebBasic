@@ -197,7 +197,7 @@ flex-> display,flex wrap->wrap,justify-content->space-between,space around,space
 
 
 
-
+											**JavaScript**
 
 
 
@@ -215,7 +215,108 @@ Js give to js engine -> Parser(dividing the code into small chunks) -> Abstract 
 																											JIT(Just in Time)(have profiler check for hot put which is repeating again again) used for performace optimization
 
 
+Token -> Smallest unit of any programming language
+1. Identifier : name given to the component of javascript(not should start with number,white space, special charcaters(expect $,_),follow nameing convention(kebaba Case, Camel Case, Snake Case,dot,hypen))
+2. liberal/constant : the data present iniside your program(number,string,boolean)
+3. Variable : 
+4. Operator : Symbol which is used to perform some operation on operands 
+ (arthimetic(+,-,%,/,*,^)),logical(&&,||,!),relational(<,>,<=),(Assignment(=),comparsion(==,===,!=,!==))
+5.keyword->predefined not use as identifier and in lowercase
+
+		declarition  initialize  declarition+intilization redeclartion reintilization redeclartion+reintilization scope 
+ Var	yes				yes 				yes					yes			yes					yes					global
+
+ let    yes             yes                 yes					no			yes					no					script
+
+ const no				no					yes					no          no                  no                   script
+
+
+console.log(a);
+var a=10; //undefined
+let,const -> refernece error(cannot acess it)->TDZ(temporal dead zone(this is the time gap between variable utilization and decalaration/inti))
+
+hosting->utilizing the variable before its declartion and intilization(all upper thing is beacuse of hosting)
 
 
 
 
+DataTypes->
+		|
+		primitive(number,string,boolean,undefined,symbol,null,BigInt)(immutable,call by value)
+		non-primitive(function,array,object)(muttable,call by refernce)
+
+
+String is way to use string-> " ",''(want to print ""),``(to declare multiple line)
+
+
+
+						function
+without calling the function it will not execute
+identifier_name()->function calling/function invoking
+
+function pop(a,b(parameter)->act as placeholder)
+(10,20)->arguments
+
+
+Type of Function->
+Named -> function with identifier
+arrow -> shortest way to write a function   ,, -> fat arrrow
+higher order function -> function which accept other function as an argument
+callback -> function which it pass as arguments
+
+function with expression
+anonymous function
+nested function
+recursive function
+generator functiion
+IIFE function(used before 2015)
+
+
+implicit return possible with arrow function => return or a/hi
+explicit we have to use return keyword when braces is used
+
+
+hof->                                                          callback(){
+
+																		}
+function higher(callback){
+
+}
+higher(callback)
+
+
+
+Array -> linear data structure/dynamic/heterogeneous(take different data)
+
+object -> real word entity / objects are entity which represent key value pair
+static method are access by object constructor have predefined method
+
+consle is part of browser not of javascript
+
+BOM->windows(global)->prompt(alert like)/provided by browser
+
+
+
+html and js is different language so they do not understand anything so they need a mediator/tarnsalator (dom)
+
+DOM->establish the relationship between html and js
+dovument object model-it is an api(act like a bridge between two differnt languages)
+
+Dom tree -> document -> html -> head(meta,title,link)
+						|			
+						body(div,p,list,span)
+
+Access method in dom -> 
+document.getElementById(),
+document.getElementByClass(),
+document.getElementByTagname(),
+document.querySelector(),
+document.querySelectorAll()
+
+document.getElementById-> if two id with same name then it take first,if it is empty it give null
+
+document.getElementByClass()-> gives html collection(array like object)(not array)
+so for styling first convert html collection into array
+if data is not present of class any it give emp ty collection
+
+ForEach -> want a callback function,
