@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="get" style="height: 100%; width: 400px; margin: auto;">
+    <form action="" id="InputForm" method="get" style="height: 100%; width: 400px; margin: auto;">
         <fieldset>
             <legend>Student Information</legend>
             <label style="margin-right:20px;" for="name">Name*</label>
@@ -57,6 +57,9 @@
             <input type="password" required id="verifypassword" name="verifypassword">
             <br>
             <br>
+            <span id = "msg"></span>
+            <br>
+            <br>
             <label for="birthday">Birthday</label>
             <input type="date" required id="birthday" name="birthday">
             <br>
@@ -69,4 +72,25 @@
         </fieldset>
     </form>
 </body>
+<script>
+    function validation(ele){
+    // ele.preventDefault()
+    let pass = document.getElementById("password");
+    let conpass = document.getElementById("verifypassword");
+    let msg = document.getElementById("msg");
+
+    if(pass.value == conpass.value){
+        msg.style.color="green";
+        msg.textContent="matched";
+    }else{
+         ele.preventDefault();
+        msg.style.color="red";
+        msg.textContent="pass mismatched";
+    }
+}
+
+let InputForm = document.getElementById("InputForm");
+
+InputForm.addEventListener('submit',validation);
+</script>
 </html>

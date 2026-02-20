@@ -1,0 +1,10 @@
+button{
+    padding: 4px;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+button:hover{
+    background-color: pink;
+}

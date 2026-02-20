@@ -320,3 +320,33 @@ so for styling first convert html collection into array
 if data is not present of class any it give emp ty collection
 
 ForEach -> want a callback function,
+
+
+document.querySelector()-> based on css selector(id,class,universal,tag,grouping) we target the  single elements and if not present it give null
+
+document.querySelectorAll()-> it is for target group elements and it will give nodelist(array like object(but also not an array)) as it give nodelist but we can use array method on it
+
+
+HTML Collection                                NodeList
+Not use any array method without converting   Use without converting array functions
+It is always live							  It is not live most timed
+(as we make any changes in any element        (as we make any changes it keep to only effected node then we have to tell document node to tell it again)
+it frequently live changes)       
+
+
+
+										Events
+					action performed by the user on ui
+addEventListner('event',callback)
+
+let nav=document.createElement("nav");
+document.body.append(nav);
+
+let ul=document.createElement("ul");
+nav.append(ul);
+
+async and await are keyword
+fetch always return promise,async is used with function
+
+as fetch give promise which is in form of response object so we have to convert it into object so we use await keyword also it take time
+to load data, then data is come in object but all object are stored in array
